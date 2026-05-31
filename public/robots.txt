@@ -1,0 +1,26 @@
+User-Agent: *
+Allow: /
+
+# Allow search engines to access important content
+Allow: /
+Allow: /about
+Allow: /branches
+Allow: /gallery
+Allow: /events
+
+# Disallow sensitive paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /portal/
+Disallow: /.env
+Disallow: /.env.local
+
+# Sitemaps
+Sitemap: https://anointedtrinity.co.za/sitemap.xml
+Sitemap: https://anointedtrinity.co.za/sitemap-mobile.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Host
+Host: https://anointedtrinity.co.za
