@@ -1,0 +1,18 @@
+{
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "functions": {
+    "pages/api/**": {
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "DATABASE_URL": "@postgresql_url",
+    "DIRECT_URL": "@postgresql_direct_url"
+  },
+  "git": {
+    "silent": false
+  }
+}
