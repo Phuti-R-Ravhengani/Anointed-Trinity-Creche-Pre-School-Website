@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
     await prisma.admin.create({
       data: {
         userId: user.id,
-        permissions: ["all"],
+        permissions: JSON.stringify(["all"]),
       },
     });
 

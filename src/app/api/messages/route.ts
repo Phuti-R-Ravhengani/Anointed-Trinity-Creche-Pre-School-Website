@@ -68,7 +68,7 @@ export async function POST(request: NextRequest) {
         parentId: recipientId,
         subject,
         content: body,
-        attachments: [],
+        attachments: JSON.stringify([]),
         read: false,
       },
     });

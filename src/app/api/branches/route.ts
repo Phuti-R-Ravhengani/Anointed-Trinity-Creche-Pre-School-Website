@@ -88,7 +88,7 @@ export async function POST(request: NextRequest) {
         description,
         latitude,
         longitude,
-        images: Array.isArray(images) ? images : [],
+        images: Array.isArray(images) ? JSON.stringify(images) : "[]",
       },
     });
 

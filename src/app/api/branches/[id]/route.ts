@@ -89,7 +89,7 @@ export async function PATCH(
         description,
         latitude,
         longitude,
-        images: Array.isArray(images) ? images : undefined,
+        images: Array.isArray(images) ? JSON.stringify(images) : undefined,
       },
     });
 
